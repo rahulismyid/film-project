@@ -28,26 +28,52 @@ const useStyles = makeStyles(theme => ({
     },
     toolbarItemsSpan: {
         padding: '0 10px',
+        cursor: 'pointer',
+        backgroundColor: 'transparent',
+        '&:hover': {
+            background: 'rgba(0, 0, 0, 0.2)',
+            borderRadius: '4',
+            height: '10%'
+        }
     }
 }));
 
 const handleClick = (data) => {
     console.log('clicked', data);
+    const anchor = document.querySelector('#' + data);
+    if (anchor)
+        anchor.scrollIntoView({ behavior: 'smooth', block: 'center' })
 };
 
 const items = [
     {
         id: 1,
-        name: "Gallery",
-        param: 'gallery',
+        name: "News Letter",
+        param: 'newsletter',
+        scrollId: "news-letter",
         func: handleClick
     },
     {
         id: 2,
-        name: "Contact",
-        param: 'contact',
+        name: "Our Work",
+        param: 'ourwork',
+        scrollId: "category",
         func: handleClick
     },
+    {
+        id: 3,
+        name: "About",
+        param: 'about',
+        scrollId: "about-card",
+        func: handleClick
+    },
+    {
+        id: 4,
+        name: "Contact",
+        param: 'contact',
+        scrollId: "contact",
+        func: handleClick
+    }
 ];
 
 export default function DenseAppBar() {
@@ -55,7 +81,7 @@ export default function DenseAppBar() {
 
     const toolbarItem = items.map(item => {
         return (
-            <span className={classes.toolbarItemsSpan} onClick={() => item.func(item.param)}>{item.name}</span>
+            <span className={classes.toolbarItemsSpan} onClick={() => item.func(item.scrollId)}>{item.name}</span>
         );
     });
 

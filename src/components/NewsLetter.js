@@ -62,7 +62,7 @@ const NewsLetter = () => {
         <section id="news-letter" class="content page-1 moto-section shenga-about-us-section" data-widget="section" data-container="section">
             <Container className={classes.cardContainer} fixed>
                 <div className={classes.newsLetterTitle}>
-                    <h1>Recent News</h1>
+                    <h1>News Letter</h1>
                 </div>
                 {/* <Paper className={classes.paper}> */}
                 <Grid container spacing={3}>

@@ -28,10 +28,10 @@ const CategorySection = () => {
     const classes = useStyles();
 
     return (
-        <div className={classes.catSection}>
+        <div id="category" className={classes.catSection}>
             <Container className={classes.cardContainer} fixed>
                 <div className={classes.catgoryTitleText}>
-                    <h1>Recent News</h1>
+                    <h1>Our Work</h1>
                 </div>
                 <Grid container justify="center" spacing={3}>
                     <Grid item xs={12} sm={6} md={4} key={1}>

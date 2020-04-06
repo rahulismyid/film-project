@@ -78,32 +78,10 @@ function App() {
 
   return (
     <div className="App">
-      {/* <div className="imgbox">
-        <img className="center-fit" src='images/shenga.jpeg' />
-      </div>
-      <div className='fullscreenDiv'>
-        <div className="center">Hello World</div>
-      </div> */}
       <Header data={{ data: imageJson }} />
       <NewsLetter />
       <CategorySection />
       <AboutCard />
-      {/* <Container className={classes.cardContainer} maxWidth="xl">
-        <Paper className={classes.paper}>
-          <Container className={classes.cardContainer} fixed>
-            <Grid container spacing={3}>
-              <Grid item xs>
-              </Grid>
-              <Grid item xs>
-              </Grid>
-              <Grid item xs={12} sm={6} md={6}>
-              </Grid>
-              <Grid item xs>
-              </Grid>
-            </Grid>
-          </Container>
-        </Paper>
-      </Container> */}
     </div>
   );
 }
