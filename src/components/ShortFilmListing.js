@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
@@ -36,6 +36,10 @@ const styles =
 
 const ShortFilmListing = () => {
     const classes = useStyles();
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
 
     const list = filmsList.map(item => {
         return (
@@ -94,4 +98,4 @@ const ShortFilmListing = () => {
     )
 }
 
-export default ShortFilmListing
+export default ShortFilmListing;

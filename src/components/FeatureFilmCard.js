@@ -5,23 +5,23 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
+// import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import FavoriteIcon from '@material-ui/icons/Favorite';
+// import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import IconButton from '@material-ui/core/IconButton';
-import {
-    FacebookShareButton,
-    FacebookIcon,
-    InstapaperShareButton,
-    InstapaperIcon,
-    WhatsappShareButton,
-    WhatsappIcon
-} from "react-share";
+// import {
+//     FacebookShareButton,
+//     FacebookIcon,
+//     InstapaperShareButton,
+//     InstapaperIcon,
+//     WhatsappShareButton,
+//     WhatsappIcon
+// } from "react-share";
 
 
-const shareUrl = "";
-const title = "";
+// const shareUrl = "";
+// const title = "";
 
 
 const useStyles = makeStyles({
@@ -56,19 +56,19 @@ const FeatureFilmCard = () => {
                         <Typography gutterBottom variant="h5" component="h2">
                             Feature Film
                         </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
+                        {/* <Typography variant="body2" color="textSecondary" component="p">
                             Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
                             across all continents except Antarctica
-                        </Typography>
+                        </Typography> */}
                     </CardContent>
                 </CardActionArea>
                 {/* <hr /> */}
-                <CardActions>
+                {/* <CardActions>
                     <IconButton>
                         <ShareIcon />
                     </IconButton>
-                    <IconButton aria-label="add to favorites">
-                        {/* <WhatsappShareButton
+                    <IconButton aria-label="add to favorites"> */}
+                {/* <WhatsappShareButton
                             url={"http://localhost:3000/"}
                             title={"Shenga Films"}
                             separator=":: "
@@ -76,18 +76,18 @@ const FeatureFilmCard = () => {
                         >
                             <WhatsappIcon size={32} round />
                         </WhatsappShareButton> */}
-                    </IconButton>
-                    <IconButton aria-label="share">
-                        {/* <InstapaperShareButton
+                {/* </IconButton>
+                    <IconButton aria-label="share"> */}
+                {/* <InstapaperShareButton
                             url={shareUrl}
                             title={title}
                             className="Demo__some-network__share-button"
                         >
                             <InstapaperIcon size={32} round />
                         </InstapaperShareButton> */}
-                    </IconButton>
-                    <IconButton aria-label="share">
-                        {/* <FacebookShareButton
+                {/* </IconButton>
+                    <IconButton aria-label="share"> */}
+                {/* <FacebookShareButton
                             url={shareUrl}
                             quote={title}
                             className="Demo__some-network__share-button"
@@ -95,15 +95,15 @@ const FeatureFilmCard = () => {
                             <FacebookIcon size={32} round />
                         </FacebookShareButton> */}
 
-                    </IconButton>
+                {/* </IconButton> */}
 
-                    {/* <Button size="small" color="primary">
+                {/* <Button size="small" color="primary">
                         Share
                     </Button> */}
-                    {/* <Button size="small" color="primary">
+                {/* <Button size="small" color="primary">
                         Learn More
                     </Button> */}
-                </CardActions>
+                {/* </CardActions> */}
             </Card>
         </div>
     )

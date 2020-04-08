@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import BannerAnim from 'rc-banner-anim';
 import QueueAnim from 'rc-queue-anim';
 // import TweenOne from 'rc-tween-one';
@@ -15,17 +15,21 @@ const imageComp = (data) => {
         >
             <BgElement
                 key="bg"
-                className="bg"
+                className="bg showBanner"
                 style={{
                     backgroundImage: `url(${data.path})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}
             />
-            <QueueAnim className="banner-txt" name="QueueAnim">
+            <div className="header-center-text">
+                <h1>a SHENGA FILMS ARPISUVA</h1>
+                <p>We don't make movies to make money, we make money to make more movies. - Walt Disney</p>
+            </div>
+            {/* <QueueAnim className="banner-txt" name="QueueAnim">
                 <h1 key="h1">{data.title}</h1>
                 <p key="p">{data.desc}</p>
-            </QueueAnim>
+            </QueueAnim> */}
             {/* <TweenOne animation={{ y: 50, opacity: 0, type: 'from', delay: 200 }} name="TweenOne">
                 Ant Motion Demo.Ant Motion Demo
             </TweenOne> */}
@@ -57,7 +61,7 @@ const videoComp = (data) => {
 function Demo(props) {
 
     const bannerImages = props.data.data.map(item => {
-        if (item.type == "image") {
+        if (item.type === "image") {
             return imageComp(item);
         } else {
             return videoComp(item);

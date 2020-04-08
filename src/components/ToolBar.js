@@ -1,10 +1,13 @@
 import React from 'react';
+import { useHistory } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
+// import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
+// import MenuIcon from '@material-ui/icons/Menu';
+import "../styles/Toolbar.css";
+
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -12,14 +15,6 @@ const useStyles = makeStyles(theme => ({
     },
     menuButton: {
         marginRight: theme.spacing(2),
-    },
-    toolbar: {
-        position: 'absolute',
-        backgroundColor: 'rgba(0, 0, 0, 0.2)',
-        marginTop: '3%',
-        width: '90%',
-        marginRight: '5%',
-        borderRadius: '5px'
     },
     toolbarItems: {
         position: 'absolute',
@@ -31,7 +26,7 @@ const useStyles = makeStyles(theme => ({
         cursor: 'pointer',
         backgroundColor: 'transparent',
         '&:hover': {
-            background: 'rgba(0, 0, 0, 0.2)',
+            background: 'rgba(0, 0, 0, 0.0)',
             borderRadius: '4',
             height: '10%'
         }
@@ -39,7 +34,6 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const handleClick = (data) => {
-    console.log('clicked', data);
     const anchor = document.querySelector('#' + data);
     if (anchor)
         anchor.scrollIntoView({ behavior: 'smooth', block: 'center' })
@@ -71,30 +65,37 @@ const items = [
         id: 4,
         name: "Contact",
         param: 'contact',
-        scrollId: "contact",
+        scrollId: "contact-card",
         func: handleClick
     }
 ];
 
 export default function DenseAppBar() {
     const classes = useStyles();
+    const history = useHistory();
+
+    const goHome = () => {
+        history.push("/");
+    };
+
+    const isHome = (history.location.pathname === "/") ? true : false;
 
     const toolbarItem = items.map(item => {
         return (
-            <span className={classes.toolbarItemsSpan} onClick={() => item.func(item.scrollId)}>{item.name}</span>
+            <span key={item.id} className={classes.toolbarItemsSpan} onClick={() => item.func(item.scrollId)}>{item.name}</span>
         );
     });
 
     return (
         <div className={classes.root}>
-            <AppBar className={classes.toolbar} position="fixed">
+            <AppBar className="toolbar" position="fixed">
                 <Toolbar variant="dense">
-                    <IconButton edge="end" className={classes.menuButton} color="inherit" aria-label="menu">
+                    <IconButton justify="center" onClick={goHome} edge="end" className={classes.menuButton} color="inherit" aria-label="menu">
                         {/* <MenuIcon /> */}
-                        <img width="190" src="images/brand-img.jpg" />
+                        <img className="brandImg" width="190" alt="brand" src="images/brand-img.jpg" />
                     </IconButton>
-                    <div className={classes.toolbarItems}>
-                        {toolbarItem}
+                    <div className={classes.toolbarItems, "showToolbarItems"}>
+                        {isHome ? toolbarItem : ""}
                     </div>
                     {/* <Typography variant="h6" color="inherit">
                         Shenga Films
