@@ -51,9 +51,6 @@
 }
 
 @media only screen and (max-device-width: 480px){
-  .showToolbarItems {
-    display: none;
-  }
   .showBanner {
     /* display: none; */
     background-image: url(/images/images.jpeg) !important;
