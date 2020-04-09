@@ -69,7 +69,7 @@ function Demo(props) {
     });
 
     return (
-        <BannerAnim>
+        <BannerAnim arrow={false} autoPlay={true} autoPlaySpeed={5000}>
             {bannerImages}
         </BannerAnim>
     );

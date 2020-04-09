@@ -57,15 +57,18 @@ const NewsLetter = () => {
 
     return (
         <section id="news-letter" className="content page-1 moto-section shenga-about-us-section" data-widget="section" data-container="section">
-            <Container className={classes.cardContainer} fixed>
+            <Container className={classes.cardContainer} maxWidth="xl">
                 <div className="newsBoxText">
                     <div className={classes.newsLetterTitle}>
-                        <h1 className="newsBoxTitle">News Box</h1>
+                        <h2 className="newsBoxTitle-2">
+                            News Letter
+                        </h2>
                     </div>
-                    <div>
-                        <Typography align="center" variant="h5" component="h2">
-                            Updating Soon!!
-                            </Typography>
+                    <div className={classes.newsLetterTitle}>
+                        <h1 className="newsBoxTitle">Updating soon!</h1>
+                    </div>
+                    <div className="envelope">
+                        <div className="paper"></div>
                     </div>
                 </div>
                 {/* <Paper className={classes.paper}> */}

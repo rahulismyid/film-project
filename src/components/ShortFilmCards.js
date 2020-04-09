@@ -18,6 +18,7 @@ import IconButton from '@material-ui/core/IconButton';
 //     WhatsappShareButton,
 //     WhatsappIcon
 // } from "react-share";
+import "../styles/ShortFilmCards.css";
 
 
 import { useHistory } from "react-router-dom";
@@ -29,7 +30,9 @@ import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles({
     root: {
-        maxWidth: 345,
+        // maxWidth: 345,
+        height: '100%',
+        textAlign: 'center'
     },
 });
 
@@ -37,6 +40,11 @@ const styles =
 {
     media: {
         height: 300,
+    },
+    h2Style: {
+        fontWeight: 300,
+        fontFamily: 'sans-serif',
+        fontSize: 35
     }
 };
 
@@ -52,8 +60,14 @@ const ShortFilmCard = () => {
     };
 
     return (
-        <div>
-            <Card className={classes.root}>
+        <div className={classes.root} onClick={() => handleClick()}>
+            <div className="circle">
+                <img src="images/short_film.jpg" />
+            </div>
+            <div className="circle-text">
+                <h3>Short Film</h3>
+            </div>
+            {/* <Card className={classes.root}>
                 <CardActionArea onClick={() => handleClick()}>
                     <CardMedia
                         component="img"
@@ -66,20 +80,20 @@ const ShortFilmCard = () => {
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="h2">
                             Short Film
-                        </Typography>
-                        {/* <Typography variant="body2" color="textSecondary" component="p">
+                        </Typography> */}
+            {/* <Typography variant="body2" color="textSecondary" component="p">
                             Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
                             across all continents except Antarctica
                         </Typography> */}
-                    </CardContent>
-                </CardActionArea>
-                {/* <hr /> */}
-                {/* <CardActions> */}
-                {/* <IconButton>
+            {/* </CardContent>
+                </CardActionArea> */}
+            {/* <hr /> */}
+            {/* <CardActions> */}
+            {/* <IconButton>
                         <ShareIcon />
                     </IconButton> */}
-                {/* <IconButton aria-label="add to favorites"> */}
-                {/* <WhatsappShareButton
+            {/* <IconButton aria-label="add to favorites"> */}
+            {/* <WhatsappShareButton
                             url={"http://localhost:3000/"}
                             title={"Shenga Films"}
                             separator=":: "
@@ -87,18 +101,18 @@ const ShortFilmCard = () => {
                         >
                             <WhatsappIcon size={32} round />
                         </WhatsappShareButton> */}
-                {/* </IconButton>
+            {/* </IconButton>
                     <IconButton aria-label="share"> */}
-                {/* <InstapaperShareButton
+            {/* <InstapaperShareButton
                             url={shareUrl}
                             title={title}
                             className="Demo__some-network__share-button"
                         >
                             <InstapaperIcon size={32} round />
                         </InstapaperShareButton> */}
-                {/* </IconButton>
+            {/* </IconButton>
                     <IconButton aria-label="share"> */}
-                {/* <FacebookShareButton
+            {/* <FacebookShareButton
                             url={shareUrl}
                             quote={title}
                             className="Demo__some-network__share-button"
@@ -106,9 +120,9 @@ const ShortFilmCard = () => {
                             <FacebookIcon size={32} round />
                         </FacebookShareButton> */}
 
-                {/* </IconButton>
+            {/* </IconButton>
                 </CardActions> */}
-            </Card>
+            {/* </Card> */}
         </div>
     )
 }

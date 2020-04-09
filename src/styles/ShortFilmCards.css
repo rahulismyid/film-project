@@ -1,0 +1,7 @@
+.circle-text {
+    font-size: 18px;
+}
+
+.circle-text h3:hover {
+    cursor: pointer;
+}

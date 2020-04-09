@@ -19,6 +19,8 @@ import IconButton from '@material-ui/core/IconButton';
 //     WhatsappIcon
 // } from "react-share";
 
+import { useHistory } from "react-router-dom";
+
 
 // const shareUrl = "";
 // const title = "";
@@ -26,7 +28,9 @@ import IconButton from '@material-ui/core/IconButton';
 
 const useStyles = makeStyles({
     root: {
-        maxWidth: 345,
+        // maxWidth: 345,
+        height: '100%',
+        textAlign: 'center'
     },
 });
 
@@ -34,15 +38,32 @@ const styles =
 {
     media: {
         height: 300,
+    },
+    h2Style: {
+        fontWeight: 300,
+        fontFamily: 'sans-serif',
+        fontSize: 35
     }
 };
 
 const FeatureFilmCard = () => {
-    const classes = useStyles();
 
+    const history = useHistory();
+
+    const classes = useStyles();
+    const handleClick = () => {
+        // console.log('ncdskjvd')
+        history.push("/featurefilms");
+    };
     return (
-        <div>
-            <Card className={classes.root}>
+        <div className={classes.root} onClick={() => handleClick()}>
+            <div className="circle">
+                <img src="https://cdn2.vectorstock.com/i/thumb-large/52/01/vintage-movie-camera-in-flat-style-isolated-on-vector-23745201.jpg" />
+            </div>
+            <div className="circle-text">
+                <h3>Feature Film</h3>
+            </div>
+            {/* <Card className={classes.root}>
                 <CardActionArea>
                     <CardMedia
                         component="img"
@@ -55,20 +76,20 @@ const FeatureFilmCard = () => {
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="h2">
                             Feature Film
-                        </Typography>
-                        {/* <Typography variant="body2" color="textSecondary" component="p">
+                        </Typography> */}
+            {/* <Typography variant="body2" color="textSecondary" component="p">
                             Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
                             across all continents except Antarctica
                         </Typography> */}
-                    </CardContent>
-                </CardActionArea>
-                {/* <hr /> */}
-                {/* <CardActions>
+            {/* </CardContent>
+                </CardActionArea> */}
+            {/* <hr /> */}
+            {/* <CardActions>
                     <IconButton>
                         <ShareIcon />
                     </IconButton>
                     <IconButton aria-label="add to favorites"> */}
-                {/* <WhatsappShareButton
+            {/* <WhatsappShareButton
                             url={"http://localhost:3000/"}
                             title={"Shenga Films"}
                             separator=":: "
@@ -76,18 +97,18 @@ const FeatureFilmCard = () => {
                         >
                             <WhatsappIcon size={32} round />
                         </WhatsappShareButton> */}
-                {/* </IconButton>
+            {/* </IconButton>
                     <IconButton aria-label="share"> */}
-                {/* <InstapaperShareButton
+            {/* <InstapaperShareButton
                             url={shareUrl}
                             title={title}
                             className="Demo__some-network__share-button"
                         >
                             <InstapaperIcon size={32} round />
                         </InstapaperShareButton> */}
-                {/* </IconButton>
+            {/* </IconButton>
                     <IconButton aria-label="share"> */}
-                {/* <FacebookShareButton
+            {/* <FacebookShareButton
                             url={shareUrl}
                             quote={title}
                             className="Demo__some-network__share-button"
@@ -95,16 +116,16 @@ const FeatureFilmCard = () => {
                             <FacebookIcon size={32} round />
                         </FacebookShareButton> */}
 
-                {/* </IconButton> */}
+            {/* </IconButton> */}
 
-                {/* <Button size="small" color="primary">
+            {/* <Button size="small" color="primary">
                         Share
                     </Button> */}
-                {/* <Button size="small" color="primary">
+            {/* <Button size="small" color="primary">
                         Learn More
                     </Button> */}
-                {/* </CardActions> */}
-            </Card>
+            {/* </CardActions> */}
+            {/* </Card> */}
         </div>
     )
 }

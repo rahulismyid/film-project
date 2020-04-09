@@ -1,33 +1,7 @@
-.circle {
-    position: relative;
-    width: 15%;
-    height: 0;
-    padding: 15% 0 0 0;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 1px solid gray;
-    margin-left: 42%;
-  }
-
-  .circle img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .sg-nl-title, .sg-nl-sub-title {
-      text-align: center;
-  }
-
-  .sg-nl-title h1 {
-      font-size: 2em;
-  }
-
-  #about-card {
-    background: aqua;
-    padding-top: 10px;
-    padding-bottom: 50px;
-  }
+#about-card {
+  /* background: aqua; */
+  padding-top: 10px;
+  padding-bottom: 50px;
+  background: antiquewhite;
+  margin: 10px 0;
+}

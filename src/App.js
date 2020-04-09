@@ -82,8 +82,8 @@ function App() {
     <div className="App">
       <Header data={{ data: imageJson }} />
       <NewsLetter />
-      <CategorySection />
       <AboutCard />
+      <CategorySection />
       <Contact />
     </div>
   );

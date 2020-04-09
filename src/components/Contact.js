@@ -7,7 +7,7 @@ import "../styles/Contact.css";
 const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1,
-        marginTop: 60
+        // marginTop: 60
     },
     paper: {
         padding: theme.spacing(2),
@@ -15,10 +15,10 @@ const useStyles = makeStyles(theme => ({
         color: theme.palette.text.secondary,
     },
     cardContainer: {
-        marginTop: 20
+        // marginTop: 20
     },
     containerSection: {
-        marginTop: 40
+        // marginTop: 40
     }
 }));
 
@@ -48,7 +48,7 @@ const NewsLetter = () => {
                         <input type="text" />
                     </label>
                     {/* <p class="forgot-pass">Forgot password?</p> */}
-                    <button id="submitBtn" type="button" className="submit" onClick={handleClick}>Sign In</button>
+                    <button id="submitBtn" type="button" className="submit" onClick={handleClick}>Submit</button>
                     {/* <button type="button" class="fb-btn">Connect with <span>facebook</span></button> */}
                 </div>
 

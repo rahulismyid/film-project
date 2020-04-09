@@ -1,0 +1,14 @@
+#category {
+    background: antiquewhite;
+    margin: 10px 0;
+}
+
+.card-holder-class {
+    min-height: 400px;
+}
+
+@media only screen and (max-device-width: 480px){
+    .card-holder-class {
+        min-height: 300px;
+    }   
+}

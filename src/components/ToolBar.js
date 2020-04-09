@@ -26,6 +26,7 @@ const useStyles = makeStyles(theme => ({
         cursor: 'pointer',
         backgroundColor: 'transparent',
         '&:hover': {
+            color: '#ccc',
             background: 'rgba(0, 0, 0, 0.0)',
             borderRadius: '4',
             height: '10%'
@@ -49,16 +50,16 @@ const items = [
     },
     {
         id: 2,
-        name: "Our Work",
-        param: 'ourwork',
-        scrollId: "category",
+        name: "About",
+        param: 'about',
+        scrollId: "about-card",
         func: handleClick
     },
     {
         id: 3,
-        name: "About",
-        param: 'about',
-        scrollId: "about-card",
+        name: "Our Work",
+        param: 'ourwork',
+        scrollId: "category",
         func: handleClick
     },
     {

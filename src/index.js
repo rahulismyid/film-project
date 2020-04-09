@@ -6,6 +6,7 @@ import App from './App';
 import NotFound from "./components/NotFound";
 import Contact from "./components/Contact";
 import ShortFilmListing from "./components/ShortFilmListing";
+import FeatureFilmListing from "./components/FeatureFilmListing";
 import ToolBar from "./components/ToolBar";
 import Footer from "./components/Footer";
 import { scrollToSmoothly } from "./common/handlers";
@@ -36,7 +37,7 @@ const Root = () => {
 
   return (
     <Router>
-      <div onClick={myScrollFunc} id="button" className="">
+      <div onClick={myScrollFunc} id="button" className="aaaaaaaaaaaaa">
         <Icon id="arrowIcon">arrow_upward</Icon>
       </div>
       <ToolBar />
@@ -45,6 +46,7 @@ const Root = () => {
         <Route exact path="/contact" render={() => <Contact />} />
         <Route exact path='/notfound' render={() => <NotFound />} />
         <Route exact path='/shortfilms' render={() => <ShortFilmListing />} />
+        <Route exact path='/featurefilms' render={() => <FeatureFilmListing />} />
         <Route exact path="*" render={() => <NotFound />} />
       </Switch>
       <Footer />
