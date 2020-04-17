@@ -36,7 +36,7 @@ const FeatureFilmListing = () => {
                                 <WhatsappIcon size={32} round />
                             </WhatsappShareButton>
                         </span>
-                        <span>
+                        {/* <span>
                             <InstapaperShareButton
                                 url={'https://www.instagram.com/shengafilms/'}
                                 title={title}
@@ -44,7 +44,7 @@ const FeatureFilmListing = () => {
                             >
                                 <InstapaperIcon size={32} round />
                             </InstapaperShareButton>
-                        </span>
+                        </span> */}
                         <span>
                             <FacebookShareButton
                                 url={shareUrl}
