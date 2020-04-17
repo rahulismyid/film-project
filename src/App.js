@@ -48,31 +48,32 @@ const imageJson = [
     path: "./images/shenga.jpeg",
     title: "Lekin Tu toh Saale Hitchcock nikla",
     desc: ""
-  }, {
-    id: 1,
-    type: "image",
-    path: "./images/hitchcock.jpeg",
-    title: "Lekin Tu toh Saale Hitchcock nikla",
-    desc: ""
-  }, {
-    id: 2,
-    type: "image",
-    path: "./images/universal.jpeg",
-    title: "Universal 'i'",
-    desc: ""
-  }, {
-    id: 3,
-    type: "image",
-    path: "./images/madat.jpeg",
-    title: "Madat",
-    desc: ""
-  }, {
-    id: 4,
-    type: "image",
-    path: "./images/halfday.jpeg",
-    title: "halfDay",
-    desc: ""
   }
+  // , {
+  //   id: 1,
+  //   type: "image",
+  //   path: "./images/hitchcock.jpeg",
+  //   title: "Lekin Tu toh Saale Hitchcock nikla",
+  //   desc: ""
+  // }, {
+  //   id: 2,
+  //   type: "image",
+  //   path: "./images/universal.jpeg",
+  //   title: "Universal 'i'",
+  //   desc: ""
+  // }, {
+  //   id: 3,
+  //   type: "image",
+  //   path: "./images/madat.jpeg",
+  //   title: "Madat",
+  //   desc: ""
+  // }, {
+  //   id: 4,
+  //   type: "image",
+  //   path: "./images/halfday.jpeg",
+  //   title: "halfDay",
+  //   desc: ""
+  // }
 ];
 
 function App() {

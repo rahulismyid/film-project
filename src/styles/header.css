@@ -24,6 +24,17 @@
     text-align: center;
 } */
 
+/* Share Icons*/
+.header-share-icons span {
+  padding: 0 5px;
+}
+
+.header-share-icons {
+  padding: 0 0 0 0;
+  margin-top: -5px;
+}
+/* Share Icons*/
+
 .header-center-text {
   position: relative;
 }

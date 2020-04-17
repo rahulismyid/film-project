@@ -61,12 +61,21 @@ const ShortFilmCard = () => {
 
     return (
         <div className={classes.root} onClick={() => handleClick()}>
-            <div className="circle">
+            <div class="one_fourth">
+                <div class="button-container">
+                    <span>Short Film</span>
+                    {/* <a href="#">
+                        </a> */}
+                    <img src="images/short_film.jpg" />
+                </div>
+            </div>
+            {/* <div className="circle">
                 <img src="images/short_film.jpg" />
             </div>
             <div className="circle-text">
                 <h3>Short Film</h3>
-            </div>
+            </div> */}
+
             {/* <Card className={classes.root}>
                 <CardActionArea onClick={() => handleClick()}>
                     <CardMedia

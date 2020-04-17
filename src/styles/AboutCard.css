@@ -2,6 +2,11 @@
   /* background: aqua; */
   padding-top: 10px;
   padding-bottom: 50px;
-  background: antiquewhite;
+  background: #e1de61;;;
   margin: 10px 0;
+}
+
+.sg-nl-title {
+  margin: -10px 0;
+  margin-bottom: 0;
 }

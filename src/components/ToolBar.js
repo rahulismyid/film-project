@@ -3,6 +3,12 @@ import { useHistory } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
+import {
+    FacebookShareButton,
+    FacebookIcon,
+    WhatsappShareButton,
+    WhatsappIcon
+} from "react-share";
 // import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 // import MenuIcon from '@material-ui/icons/Menu';
@@ -71,6 +77,9 @@ const items = [
     }
 ];
 
+const shareUrl = "https://shengafilms.web.app/";
+const title = "a Shenga Films Arpisuva";
+
 export default function DenseAppBar() {
     const classes = useStyles();
     const history = useHistory();
@@ -81,7 +90,31 @@ export default function DenseAppBar() {
 
     const isHome = (history.location.pathname === "/") ? true : false;
 
-    const toolbarItem = items.map(item => {
+    const shareicons = (
+        <div className="header-share-icons">
+            <span>
+                <WhatsappShareButton
+                    url={shareUrl}
+                    title={title}
+                    separator=" "
+                    className="Demo__some-network__share-button"
+                >
+                    <WhatsappIcon size={32} round />
+                </WhatsappShareButton>
+            </span>
+            <span>
+                <FacebookShareButton
+                    url={shareUrl}
+                    quote={title}
+                    className="Demo__some-network__share-button"
+                >
+                    <FacebookIcon size={32} round />
+                </FacebookShareButton>
+            </span>
+        </div>
+    );
+
+    let toolbarItem = items.map((item) => {
         return (
             <span key={item.id} className={classes.toolbarItemsSpan} onClick={() => item.func(item.scrollId)}>{item.name}</span>
         );
@@ -95,9 +128,12 @@ export default function DenseAppBar() {
                         {/* <MenuIcon /> */}
                         <img className="brandImg" width="190" alt="brand" src="images/brand-img.jpg" />
                     </IconButton>
-                    <div className={classes.toolbarItems, "showToolbarItems"}>
-                        {isHome ? toolbarItem : ""}
-                    </div>
+
+                    {isHome ?
+                        <div className={classes.toolbarItems, "showToolbarItems"}>
+                            {toolbarItem}{shareicons}
+                        </div>
+                        : ""}
                     {/* <Typography variant="h6" color="inherit">
                         Shenga Films
                     </Typography> */}

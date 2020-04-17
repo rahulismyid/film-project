@@ -19,7 +19,8 @@ const useStyles = makeStyles(theme => ({
         margin: '1% auto 0 auto'
     },
     catgoryTitleText: {
-        paddingTop: 10,
+        paddingTop: 30,
+        marginBottom: 20,
         textAlign: 'center',
         fontSize: 25
     },

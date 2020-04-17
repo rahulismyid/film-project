@@ -85,7 +85,11 @@ const ShortFilmListing = () => {
                     <Grid item xs>
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>
-                        <Paper elevation={0} className={classes.paper}>Short Films</Paper>
+                        <h2 className="newsBoxTitle-2">
+                            Short Films
+                        </h2>
+                        <br />
+                        <Paper elevation={0} className={classes.paper}></Paper>
                     </Grid>
                     <Grid item xs>
                     </Grid>

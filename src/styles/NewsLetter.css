@@ -23,6 +23,20 @@
   cursor: pointer;
 }
 
+@media only screen and (max-device-width: 480px){
+  .circle {
+    position: relative;
+    width: 67%;
+    height: 55%;
+    left: 15%;
+    padding: 15% 0 0 0;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid gray;
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 1px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+  }
+}
+
 .sg-nl-title, .sg-nl-sub-title {
     text-align: center;
 }
@@ -32,7 +46,7 @@
 }
 
 #news-letter {
-  background: antiquewhite;
+  background: #e1de61;;;
   margin: 10px 0;
   padding-top: 10px;
   padding-bottom: 50px;
@@ -41,7 +55,7 @@
 .newsBoxText {
   text-align: center;
   /* border: 1px solid #ccc; */
-  padding: 5px 0 20px 0;
+  padding: 25px 0 30px 0;
   border-radius: 4px;
   position: relative;
 }

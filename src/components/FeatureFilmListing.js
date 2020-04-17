@@ -38,7 +38,7 @@ const FeatureFilmListing = () => {
                         </span>
                         <span>
                             <InstapaperShareButton
-                                url={shareUrl}
+                                url={'https://www.instagram.com/shengafilms/'}
                                 title={title}
                                 className="Demo__some-network__share-button"
                             >

@@ -2,7 +2,7 @@
   #notfound {
     position: relative;
     height: 85vh;
-    /* background: #f6f6f6; */
+    background: #e1de61;;;
   }
   
   #notfound .notfound {
@@ -20,7 +20,7 @@
     line-height: 1.4;
     padding: 110px 40px;
     text-align: center;
-    background: #fff;
+    background: #e1de61;;;
     /* -webkit-box-shadow: 0 15px 15px -10px rgba(0, 0, 0, 0.1);
             box-shadow: 0 15px 15px -10px rgba(0, 0, 0, 0.1); */
   }

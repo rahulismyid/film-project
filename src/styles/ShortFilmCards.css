@@ -5,3 +5,69 @@
 .circle-text h3:hover {
     cursor: pointer;
 }
+
+.one_fourth {
+	width: 74%;
+    height: 100%;
+    margin-left: 13%;
+}
+
+@media only screen and (max-device-width: 480px){
+    .one_fourth {
+        width: 74%;
+        height: 100%;
+        margin-left: 15%;
+    }
+}
+
+.button-container {
+	position: relative;
+	text-align: center;
+	padding: 0;
+	border-radius: 50%;
+	overflow: hidden;
+	height: 75%;
+	box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 1px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.button-container span:before {
+	content: '';
+	display: inline-block;
+	height: 55%;
+	/* 
+      vertical-align:middle; 
+      height: 100%;*/
+}
+
+.button-container span {
+	transition: all .5s ease-out;
+	background: rgba(88, 88, 88, 0.7);
+	border-radius: 50%;
+	vertical-align: middle;
+	padding: 5%;
+	color: #FFFFFF;
+	position: absolute;
+	font-size: 1.125em;
+	font-weight: 700;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 90%;
+	display: inline-block;
+	text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button-container span:hover {
+	background: none;
+	border: none;
+	opacity: 0;
+}
+
+.button-container img {
+	width: 100%;
+	height: auto;
+	display: block
+}

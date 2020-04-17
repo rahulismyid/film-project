@@ -61,7 +61,7 @@ const NewsLetter = () => {
                 <div className="newsBoxText">
                     <div className={classes.newsLetterTitle}>
                         <h2 className="newsBoxTitle-2">
-                            News Letter
+                            News Box
                         </h2>
                     </div>
                     <div className={classes.newsLetterTitle}>
