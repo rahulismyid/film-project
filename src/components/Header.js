@@ -24,7 +24,7 @@ const imageComp = (data) => {
             />
             <div className="header-center-text">
                 <h1>a SHENGA FILMS ARPISUVA</h1>
-                <p>We don't make movies to make money, we make money to make more movies. - Walt Disney</p>
+                <p>We don't make movies to make money, we make money to make more movies. - <cite>Walt Disney</cite></p>
             </div>
             {/* <QueueAnim className="banner-txt" name="QueueAnim">
                 <h1 key="h1">{data.title}</h1>

@@ -64,7 +64,8 @@
 @media only screen and (max-device-width: 480px){
   .showBanner {
     /* display: none; */
-    background-image: url(/images/images.jpeg) !important;
+    /* https://androidwalls.net/wp-content/uploads/2016/03/Ocean%20Beach%20Blur%20HTC%20Android%20Wallpaper-360x640.jpg */
+    background-image: url(/images/blurr.jpg) !important;
     background-size: cover;
     background-position: center center;
   }
@@ -80,6 +81,7 @@
     right: 0;
     left: 0;
     font-size: 20px;
+    color: black;
   }
   
   .header-center-text p {
@@ -91,6 +93,7 @@
     right: 0;
     left: 0;
     font-size: 18px;
+    color: black;
   }
   .banner-anim-arrow-default.prev, .banner-anim-arrow-default.next {
     display: none;

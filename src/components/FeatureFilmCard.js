@@ -57,20 +57,28 @@ const FeatureFilmCard = () => {
     };
     return (
         <div className={classes.root} onClick={() => handleClick()}>
-            <div class="one_fourth">
+            {/* <div class="one_fourth">
                 <div class="button-container">
                     <span>Feature Film</span>
-                    {/* <a href="#">
-                        </a> */}
+                    <img src="https://cdn2.vectorstock.com/i/thumb-large/52/01/vintage-movie-camera-in-flat-style-isolated-on-vector-23745201.jpg" />
+                </div>
+            </div> */}
+            <div class="img-circle">
+                <div class="image-wrapper">
                     <img src="https://cdn2.vectorstock.com/i/thumb-large/52/01/vintage-movie-camera-in-flat-style-isolated-on-vector-23745201.jpg" />
                 </div>
             </div>
-            {/* <div className="circle">
-                <img src="https://cdn2.vectorstock.com/i/thumb-large/52/01/vintage-movie-camera-in-flat-style-isolated-on-vector-23745201.jpg" />
-            </div>
             <div className="circle-text">
                 <h3>Feature Film</h3>
-            </div> */}
+            </div>
+            <div>
+                {/* <div className="circle">
+                    <img src="https://cdn2.vectorstock.com/i/thumb-large/52/01/vintage-movie-camera-in-flat-style-isolated-on-vector-23745201.jpg" />
+                </div>
+                <div className="circle-text">
+                    <h3>Feature Film</h3>
+                </div> */}
+            </div>
             {/* <Card className={classes.root}>
                 <CardActionArea>
                     <CardMedia
