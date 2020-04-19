@@ -11,8 +11,8 @@ import Typography from '@material-ui/core/Typography';
 import ShareIcon from '@material-ui/icons/Share';
 import IconButton from '@material-ui/core/IconButton';
 // import {
-//     FacebookShareButton,
-//     FacebookIcon,
+//     TwitterShareButton,
+//     TwitterIcon,
 //     InstapaperShareButton,
 //     InstapaperIcon,
 //     WhatsappShareButton,
@@ -129,13 +129,13 @@ const ShortFilmCard = () => {
                         </InstapaperShareButton> */}
             {/* </IconButton>
                     <IconButton aria-label="share"> */}
-            {/* <FacebookShareButton
+            {/* <TwitterShareButton
                             url={shareUrl}
                             quote={title}
                             className="Demo__some-network__share-button"
                         >
-                            <FacebookIcon size={32} round />
-                        </FacebookShareButton> */}
+                            <TwitterIcon size={32} round />
+                        </TwitterShareButton> */}
 
             {/* </IconButton>
                 </CardActions> */}

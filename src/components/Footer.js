@@ -1,8 +1,8 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
 import {
-    FacebookShareButton,
-    FacebookIcon,
+    TwitterShareButton,
+    TwitterIcon,
     WhatsappShareButton,
     WhatsappIcon
 } from "react-share";
@@ -31,13 +31,13 @@ const Footer = () => {
                             </WhatsappShareButton>
                         </span>
                         <span>
-                            <FacebookShareButton
+                            <TwitterShareButton
                                 url={shareUrl}
                                 quote={title}
                                 className="Demo__some-network__share-button"
                             >
-                                <FacebookIcon size={32} round />
-                            </FacebookShareButton>
+                                <TwitterIcon size={32} round />
+                            </TwitterShareButton>
                         </span>
                     </div>
                 </ul>

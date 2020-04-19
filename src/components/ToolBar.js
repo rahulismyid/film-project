@@ -4,8 +4,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import {
-    FacebookShareButton,
-    FacebookIcon,
+    TwitterShareButton,
+    TwitterIcon,
     WhatsappShareButton,
     WhatsappIcon
 } from "react-share";
@@ -103,13 +103,13 @@ export default function DenseAppBar() {
                 </WhatsappShareButton>
             </span>
             <span>
-                <FacebookShareButton
+                <TwitterShareButton
                     url={shareUrl}
                     quote={title}
                     className="Demo__some-network__share-button"
                 >
-                    <FacebookIcon size={32} round />
-                </FacebookShareButton>
+                    <TwitterIcon size={32} round />
+                </TwitterShareButton>
             </span>
         </div>
     );

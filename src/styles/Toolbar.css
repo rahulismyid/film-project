@@ -24,3 +24,33 @@
         right: 0;
     }
 }
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 600px) {
+    .showToolbarItems {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 800px) {
+    .showToolbarItems {
+        position: absolute;
+        display: flex;
+        right: 0;
+        background: rgba(0,0,0,0.2);
+        padding: 14px 0;
+        border-radius: 4px;
+        height: 10px;
+        font-size: 13px;
+    }
+
+    .toolbar {
+        width: 99% !important;
+        position: absolute !important;
+        margin-top: 3%;
+        margin-right: 3%;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0) !important;
+        box-shadow: none !important;
+    }
+}

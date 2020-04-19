@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import "../styles/FeatureFilmListing.css";
 
 import {
-    FacebookShareButton,
-    FacebookIcon,
+    TwitterShareButton,
+    TwitterIcon,
     InstapaperShareButton,
     InstapaperIcon,
     WhatsappShareButton,
@@ -46,13 +46,13 @@ const FeatureFilmListing = () => {
                             </InstapaperShareButton>
                         </span> */}
                         <span>
-                            <FacebookShareButton
+                            <TwitterShareButton
                                 url={shareUrl}
                                 quote={title}
                                 className="Demo__some-network__share-button"
                             >
-                                <FacebookIcon size={32} round />
-                            </FacebookShareButton>
+                                <TwitterIcon size={32} round />
+                            </TwitterShareButton>
                         </span>
                     </div>
                     {/* <form class="ff-listing-search">
